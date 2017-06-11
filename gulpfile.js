@@ -7,11 +7,25 @@ gulp.task('default', function(){
 });
 
 gulp.task('html', function(){
-    console.log("html works");
+    console.log("something just changed in yout html file");
 });
 
+gulp.task('styles', function(){
+    console.log("something just changed in your css files");
+});
+
+// utilizing gulp for file change automation
+
 gulp.task('watch', function(){
+
     watch('./app/index.html', function(){
         gulp.start('html');
     });
+
+    watch('./app/assets/styles/**/*.css', function(){
+        gulp.start('styles');
+    });
+
+
 });
+
