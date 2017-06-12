@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gURLmeetsCode/travel_site_project.git"
+    "url": "https://github.com/gURLmeetsCode/travel_site_project.git"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +27,7 @@
     "gulp-postcss": "^7.0.0",
     "gulp-watch": "^4.3.11",
     "postcss-import": "^10.0.0",
+    "postcss-mixins": "^6.0.0",
     "postcss-nested": "^2.0.2",
     "postcss-simple-vars": "^4.0.0"
   }
