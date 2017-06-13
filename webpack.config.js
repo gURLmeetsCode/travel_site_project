@@ -1,10 +1,13 @@
 // object initialization
 // per es2015 standard entry and exit points need to have __dirname in front and babel loaders need to use the full name "babel-loader"
 module.exports = {
-    entry: __dirname + "/app/assets/scripts/App.js",
+    entry: {
+        App: __dirname + "/app/assets/scripts/App.js",
+        Vendor: __dirname + "/app/assets/scripts/Vendor.js"
+    },
     output: {
         path: __dirname + "/app/temp/scripts",
-        filename: "App.js"
+        filename: "[name].js"
     },
     module:{
         loaders: [
